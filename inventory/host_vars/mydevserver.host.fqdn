@@ -1,6 +1,5 @@
 ---
 ansible_ssh_user: ubuntu
-#ansible_ssh_private_key_file: /home/ubuntu/amazon-key.pem
 ansible_ssh_private_key_file: /home/ubuntu/PV_Ubuntu1_key.pem
 ansible_host: 172.31.43.133
 ansible_python_interpreter: /usr/bin/python3
