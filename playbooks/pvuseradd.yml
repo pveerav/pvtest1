@@ -1,0 +1,17 @@
+---
+- name: create a new user on the listed hosts
+  hosts: all
+  become: yes
+  become_method: sudo
+  pre_tasks:
+    - shell: echo 'creating a new user'
+  tasks:
+    - name: Add the PVtest  user testing
+      shell: useradd -u 2002 -s /bin/bash -c "PV Test" pvtest1
+# Differnt ways to create the user
+    - name: Add the user 'pvtest' with a specific uid and a primary group of 'admin'
+      user:
+        name: pvtest2
+        comment: PV Test
+        uid: 2003
+        group: pvtest2
