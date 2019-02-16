@@ -12,7 +12,7 @@
     - name: Add the user 'pvtest' with a specific uid and a primary group of 'admin'
       user:
         name: pvtest2
-        comment: PV Test
+        comment: PV Test2
         uid: 2003
         group: pvtest2
     - name: delete the PVtest1  user testing
